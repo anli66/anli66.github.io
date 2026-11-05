@@ -14,6 +14,8 @@ class PageParser(HTMLParser):
         if tag=='a':
             self.links.append(attrs.get('href',''))
             self.active += attrs.get('aria-current')=='page'
+        if tag=='img' and not attrs.get('src','').startswith('https:'):
+            assert Path(attrs['src']).exists(), attrs['src']
         self.headings += tag=='h1'
 
 pages=list(Path('.').glob('*.html'))
@@ -26,7 +28,7 @@ for page in pages:
     assert 'Lisowka' not in text, page
     for link in parser.links:
         if not link.startswith(('https:', '#')):
-            assert Path(link).exists(), (page,link)
+            assert Path(link.split('#')[0]).exists(), (page,link)
     if len(sys.argv)>1:
         with urlopen(sys.argv[1].rstrip('/')+'/'+page.name) as response:
             assert response.status==200, page
