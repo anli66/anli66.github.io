@@ -59,10 +59,20 @@ card('EU IHI · Personalized interventions','CAREPATH','Developing reinforcement
 card('Cancer Center Amsterdam · Imaging biomarkers','CLARITY','Discovering imaging biomarkers of treatment response in solid tumors, with case studies in colorectal liver metastases and pancreatic cancer.','<p class="role"><strong>My role:</strong> Project lead.</p><div class="tags"><span>Medical imaging</span><span>Treatment response</span><span>Oncology</span></div>')+
 card('VU–UT · Treatment monitoring','PULSE-ONC','A collaborative project exploring explainability methods and foundation models for sequential data captured during oncology treatment monitoring.','<div class="tags"><span>Explainable AI</span><span>Foundation models</span><span>Sequential data</span></div>')+'</div>')
 
-write_page('students.html','Students & supervision','Learning through research','Supervising PhD and master’s research at the intersection of artificial intelligence and health.', '<div class="grid two">'+
-card('Doctoral research','PhD supervision','My supervision includes research connected to digital health and clinically relevant AI. Selected work explores forecasting stress transitions from ecological momentary assessment data, and clinically impactful explainable AI methods in medical imaging.')+
-card('Master’s research','Master’s supervision','Selected master’s research explores detecting silent failures in rare tumor segmentation, examining distributional shift and uncertainty-aware quality assessment.')+'''
-</div><section class="section reading"><p class="eyebrow">Selected research outputs</p><h2>Research connected to supervision</h2>
+write_page('students.html','Students & supervision','Learning through research','Supervising PhD, master’s, and bachelor’s research at the intersection of artificial intelligence and health.', '<section aria-labelledby="phd-students"><div class="section-title"><p class="eyebrow">Current students</p><h2 id="phd-students">PhD researchers</h2></div><div class="grid two">'+
+card('Current PhD student','Rutger van der Linden','Reinforcement learning for mobile health (mHealth).')+
+card('Current PhD student','Shahab Ud Din','Explainable artificial intelligence (XAI).')+
+card('Current PhD student','Yue Su','Gaze language models.')+
+card('Current PhD student','Kieran Keesmaat','Reinforcement learning for personalized medication adherence.')+'''
+</div></section><section class="section reading" aria-labelledby="student-projects"><p class="eyebrow">Past & current student research</p><h2 id="student-projects">Master’s & bachelor’s students</h2>
+<ol class="timeline student-timeline">
+<li><div class="timeline-date">2026</div><article><h2>Student projects</h2><p>Student details to be added.</p></article></li>
+<li><div class="timeline-date">2025</div><article><h2>Student projects</h2><p>Student details to be added.</p></article></li>
+<li><div class="timeline-date">2024</div><article><h2>Student projects</h2><p>Student details to be added.</p></article></li>
+<li><div class="timeline-date">2022</div><article><p class="eyebrow">Bachelor’s students</p><h2>Paulina Adamczyk, Maciej Kus,<br>Sylwia Marek &amp; Ryszard Pręcikowski</h2></article></li>
+<li><div class="timeline-date">2020</div><article><h2>Abdelrahman Elskhawy</h2><p>Continual learning for medical image segmentation.</p><a class="text-link" href="https://arxiv.org/abs/2008.05557">Continual Class Incremental Learning for CT Thoracic Segmentation ↗</a></article></li>
+<li><div class="timeline-date">2019</div><article><h2>Daria Zotova</h2></article></li>
+</ol></section><section class="section reading"><p class="eyebrow">Selected research outputs</p><h2>Research connected to supervision</h2>
 <ul class="publication-list"><li><strong>Forecasting stress transitions using ecological momentary assessment data and machine learning.</strong><span>Internet Interventions · 2026</span></li><li><strong>Which explainable AI methods in medical imaging are clinically impactful? A systematic literature review addressing the clinician’s perspective.</strong><span>Frontiers in Artificial Intelligence · 2026</span></li><li><strong>Detecting silent failures in rare tumor segmentation: The impact of distributional shift on uncertainty-aware quality assessment.</strong><span>International Conference on Artificial Intelligence in Medicine · 2026</span></li></ul>
 <a class="text-link" href="https://scholar.google.com/citations?user=-hXV9EsAAAAJ&amp;hl=en">Find publications on Google Scholar ↗</a></section>''')
 
