@@ -12,7 +12,7 @@ Preview with `python -m http.server 8000`, then open http://localhost:8000.
 
 Research, experience, education, teaching, projects and supervision descriptions were transcribed or summarized from the supplied `cv_anli_updated.pdf`. The original homepage supplied the biography and social links. The private CV itself is not included or published.
 
-The Students page lists current PhD students and historical student entries supplied by the site owner, with explicit placeholders for 2024–2026. Abdelrahman Elskhawy’s full name was verified against https://arxiv.org/abs/2008.05557. The Collaborators page describes documented institutional and project partnerships; individual collaborators can be added when confirmed.
+The Students page lists current PhD students and historical student entries supplied by the site owner, with explicit placeholders for 2024–2026. Abdelrahman Elskhawy’s full name was verified against https://arxiv.org/abs/2008.05557. The Collaborators page includes the people explicitly named in the two oncology overview slides supplied by the site owner. No identity was inferred from an unlabeled portrait. Those slides also inform the homepage clinician/patient support overview and the project descriptions. Slide images are not republished.
 
 The timeline is ordered by start date, newest first; overlapping roles and education are retained. The supplied AIME 2027 reference could not be loaded during implementation, so its layout has not been reproduced.
 
