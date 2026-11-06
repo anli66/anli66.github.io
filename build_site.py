@@ -1,5 +1,6 @@
 from pathlib import Path
 from html import escape
+from research_journey import STORY
 
 ROOT = Path(__file__).parent
 NAV = [('index.html','Home'), ('research-journey.html','Research journey'), ('projects.html','Current projects'), ('students.html','Students'), ('teaching.html','Teaching')]
@@ -65,7 +66,7 @@ journey = [
 months = {'Jan':1,'Feb':2,'Mar':3,'Apr':4,'May':5,'Jun':6,'Jul':7,'Aug':8,'Sep':9,'Oct':10,'Nov':11,'Dec':12}
 journey.sort(key=lambda entry: (int(entry[0].split()[1]), months[entry[0].split()[0]]), reverse=True)
 timeline = '<ol class="timeline">' + ''.join(f'<li><div class="timeline-date">{date}</div><article><p class="eyebrow">{kind}</p><h2>{title}</h2><p class="institution">{place}</p><p>{text}</p></article></li>' for date,kind,title,place,text in journey) + '</ol>'
-write_page('research-journey.html','My research journey','Experience & education','From computing and cognitive science to medical imaging, digital health, and AI for cancer care. Appointments and education overlap where they ran concurrently.',timeline+'''
+write_page('research-journey.html','My research journey','Questions, turning points & research leadership','From eye tracking and medical imaging to explainable sequential decision-making from uncertain evidence.',STORY+'<section class="section career-record"><details><summary>Full appointments &amp; education timeline</summary><p class="career-note">Dates follow my CV. Appointments and education overlap where they ran concurrently.</p>'+timeline+'</details></section>'+'''
 <section class="section"><p class="eyebrow">Beyond the lab</p><h2>Scientific community & engagement</h2><div class="grid two">'''+
 card('Service','Research community','Editorial Board, Journal of Biomedical Informatics (2024–2028). Program committees: KR4HC 2023 and AIME 2025. Co-organizer of the AI for Affordable Healthcare workshop at ICLR 2020.')+
 card('Outreach','Sharing research','Speaker and mentor at the Perspektywy Women in Tech Summit (2022), and project contributor and student mentor at brainhack-krakow (2022).')+'</div></section>')

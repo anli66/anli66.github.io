@@ -4,7 +4,7 @@ A buildless, responsive website for GitHub Pages. All five pages are plain HTML 
 
 ## Editing
 
-Edit the content in `build_site.py`, then run `python build_site.py` to regenerate the six HTML pages. Styles are edited directly in `style.css`.
+Edit the shared content in `build_site.py` and the research-journey narrative in `research_journey.py`, then run `python build_site.py` to regenerate the five HTML pages. Styles are edited directly in `style.css`.
 
 Preview with `python -m http.server 8000`, then open http://localhost:8000.
 
@@ -25,3 +25,5 @@ The Academic Bordeaux revision uses #562435, #762F43, #F6F2EC, #302D30 and #C9A7
 The overarching question connects explanations, uncertainty and sequential decisions. The 2027–2031 agenda is framed as future research aims, not awarded funding or completed outcomes. Leadership statements distinguish CLARITY project leadership, CAREPATH component leadership and PULSE-ONC collaboration, following the supplied CV. SATO's individual contributions follow its published CRediT statement: https://pmc.ncbi.nlm.nih.gov/articles/PMC9975785/. The first-author RL feasibility study is explicitly described as synthetic-data research: https://ceur-ws.org/Vol-3060/paper-2.pdf. Other flagship papers are identified as co-authored work.
 
 Student supervision locations follow the owner's clarification. Publication links are matched to the supplied CV, publisher records and author lists. The student paper list includes master's/bachelor's project outputs and verified PhD-student papers/preprints. Kieran has recently started and has no paper link. Names for the 2024–2026 student rosters remain placeholders. Conference-year labels are used for AIME 2026 because the institutional record lists the proceedings publication year as 2027.
+
+The Research Journey narrative is adapted from the SpinozaLecture chat and its recorded-narrative speaker notes, at the site owner’s explicit request. Six chapters explain how the scientific questions developed. The original CV timeline remains available in an accessible native details element. Ongoing CLARITY work is distinguished from hypotheses and proposed explanation / eye-tracking studies; no reader-study recruitment targets or private proposal files are published.
