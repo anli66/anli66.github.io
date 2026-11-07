@@ -1,10 +1,10 @@
 # Aneta Lisowska — personal website
 
-A buildless, responsive website for GitHub Pages. All five pages are plain HTML and share `style.css`. No npm packages or server are needed in production.
+A buildless, responsive website for GitHub Pages. All six pages are plain HTML and share `style.css`. No npm packages or server are needed in production.
 
 ## Editing
 
-Edit the shared content in `build_site.py` and the research-journey narrative in `research_journey.py`, then run `python build_site.py` to regenerate the five HTML pages. Styles are edited directly in `style.css`.
+Edit the shared content in `build_site.py` and the research-journey narrative in `research_journey.py`, then run `python build_site.py` to regenerate the six HTML pages. Styles are edited directly in `style.css`.
 
 Preview with `python -m http.server 8000`, then open http://localhost:8000.
 
@@ -26,8 +26,10 @@ The overarching question connects explanations, uncertainty and sequential decis
 
 Student supervision locations follow the owner's clarification. Publication links are matched to the supplied CV, publisher records and author lists. The student paper list includes master's/bachelor's project outputs and verified PhD-student papers/preprints. Kieran has recently started and has no paper link. Names for the 2024–2026 student rosters remain placeholders. Conference-year labels are used for AIME 2026 because the institutional record lists the proceedings publication year as 2027.
 
-The Research Journey narrative is adapted from the SpinozaLecture chat and its recorded-narrative speaker notes, at the site owner’s explicit request. Six chapters explain how the scientific questions developed. The original CV timeline remains available in an accessible native details element. Ongoing CLARITY work is distinguished from hypotheses and proposed explanation / eye-tracking studies; no reader-study recruitment targets or private proposal files are published.
+The Research Journey narrative is adapted from the SpinozaLecture chat and its recorded-narrative speaker notes, at the site owner’s explicit request. Six chapters explain how the scientific questions developed. Appointments, education and service are available on the separate Academic CV page (cv.html). Ongoing CLARITY work is distinguished from hypotheses and proposed explanation / eye-tracking studies; no reader-study recruitment targets or private proposal files are published.
 
 The homepage also draws on the Spinoza lecture: its central question concerns choosing and explaining the next step from uncertain patient evidence. The framework explicitly separates observations, inferred state, action and feedback. Gaze alignment, clinical meaning and model faithfulness remain distinct, and future diagnostic studies remain in the research agenda. The homepage introduces the programme; Research Journey carries the longer narrative.
 
 The site owner clarified the programme’s measurable overarching objective: maximise survival and quality of life. The homepage now puts those objectives first and connects them to estimating patient state, predicting state transitions conditional on actions, and studying policies over the care journey. Engagement, adherence, response and toxicity are intermediate measures, not replacements for the long-term objectives. Current projects are explicitly parts of a research vision, without claiming a validated end-to-end treatment policy or demonstrated survival benefit.
+
+Following the supplied editorial brief, Research Journey is 666 words (excluding the shared page heading/navigation/footer), down from 1,192 words in the previous narrative, a 44.1% reduction. It preserves six stages with one scientific question each, current leadership evidence and the survival/quality-of-life objective. The chapter jump navigation and large illustrations were removed from this page. Appointments, education and community engagement are now on cv.html, with publication and teaching resource links. Source CV files remain private.

@@ -22,7 +22,7 @@ class PageParser(HTMLParser):
         self.headings += tag=='h1'
 
 pages=list(Path('.').glob('*.html'))
-assert len(pages)==5
+assert len(pages)==6
 for page in pages:
     text=page.read_text(encoding='utf-8')
     parser=PageParser()
@@ -41,4 +41,4 @@ for page in pages:
     if len(sys.argv)>1:
         with urlopen(sys.argv[1].rstrip('/')+'/'+page.name) as response:
             assert response.status==200, page
-print('PASS: five pages; all local links resolve; one main heading and active navigation item per page; name corrected.')
+print('PASS: six pages; all local links resolve; one main heading and active navigation item per page; name corrected.')

@@ -3,7 +3,7 @@ from html import escape
 from research_journey import STORY
 
 ROOT = Path(__file__).parent
-NAV = [('index.html','Home'), ('research-journey.html','Research journey'), ('projects.html','Current projects'), ('students.html','Students'), ('teaching.html','Teaching')]
+NAV = [('index.html','Home'), ('research-journey.html','Research journey'), ('projects.html','Current projects'), ('students.html','Students'), ('teaching.html','Teaching'), ('cv.html','Academic CV')]
 
 def write_page(filename, title, eyebrow, intro, body):
     nav = ''.join(f'<a href="{url}"'+(' aria-current="page"' if url == filename else '')+f'>{label}</a>' for url,label in NAV)
@@ -66,8 +66,10 @@ journey = [
 months = {'Jan':1,'Feb':2,'Mar':3,'Apr':4,'May':5,'Jun':6,'Jul':7,'Aug':8,'Sep':9,'Oct':10,'Nov':11,'Dec':12}
 journey.sort(key=lambda entry: (int(entry[0].split()[1]), months[entry[0].split()[0]]), reverse=True)
 timeline = '<ol class="timeline">' + ''.join(f'<li><div class="timeline-date">{date}</div><article><p class="eyebrow">{kind}</p><h2>{title}</h2><p class="institution">{place}</p><p>{text}</p></article></li>' for date,kind,title,place,text in journey) + '</ol>'
-write_page('research-journey.html','My research journey','Questions, turning points & research leadership','From eye tracking and medical imaging to explainable sequential decision-making from uncertain evidence.',STORY+'<section class="section career-record"><details><summary>Full appointments &amp; education timeline</summary><p class="career-note">Dates follow my CV. Appointments and education overlap where they ran concurrently.</p>'+timeline+'</details></section>'+'''
-<section class="section"><p class="eyebrow">Beyond the lab</p><h2>Scientific community & engagement</h2><div class="grid two">'''+
+write_page('research-journey.html','My research journey','Questions & turning points','From understanding human interpretation to AI that supports decisions across the patient journey.',STORY)
+
+write_page('cv.html','Academic CV','Appointments, education & service','Academic and industry experience, alongside research leadership, teaching, and scientific service.', '<p class="cv-context">For the questions connecting this work, read my <a href="research-journey.html">research journey</a>.</p>'+timeline+'<div class="cv-resources"><a href="https://scholar.google.com/citations?user=-hXV9EsAAAAJ&amp;hl=en">Full publication record ↗</a><a href="teaching.html">Teaching responsibilities ↗</a><a href="projects.html">Current research &amp; project roles ↗</a></div>'+'''
+<section class="section"><p class="eyebrow">Academic service & engagement</p><h2>Scientific community & engagement</h2><div class="grid two">'''+
 card('Service','Research community','Editorial Board, Journal of Biomedical Informatics (2024–2028). Program committees: KR4HC 2023 and AIME 2025. Co-organizer of the AI for Affordable Healthcare workshop at ICLR 2020.')+
 card('Outreach','Sharing research','Speaker and mentor at the Perspektywy Women in Tech Summit (2022), and project contributor and student mentor at brainhack-krakow (2022).')+'</div></section>')
 
@@ -112,4 +114,4 @@ card('Postgraduate · Lecturer','Introduction to AI for Medical Researchers','Le
 </div><section class="feature-strip"><div><p class="eyebrow">Research education</p><h2>Learning through real research questions.</h2><p>I also supervise PhD and master’s students working on AI and health.</p></div><a class="button light" href="students.html">Explore supervision ↗</a></section>''')
 
 (ROOT / 'collaborators.html').unlink(missing_ok=True)
-print('Generated five pages.')
+print('Generated six pages.')
