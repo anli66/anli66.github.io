@@ -29,7 +29,7 @@ STAGES = [
 ['My proposed studies return to eye tracking in a new setting: AI-assisted clinical decisions. I want to investigate how radiologists interpret AI advice, recognise errors, and decide when evidence is uncertain.',
 'Agreement with gaze, clinical meaning, and faithfulness to model behaviour are distinct properties. The aim is to test their relationship to diagnostic decisions, reading time, and burden. These studies are proposed and depend on funding and study setup.'],
 'When AI is wrong, what helps a clinician notice?',
-[('index.html#agenda','Future research agenda')]),
+[('research.html#agenda','Future research agenda')]),
 ]
 
 def render_stage(index,stage):

@@ -1,10 +1,10 @@
 # Aneta Lisowska — personal website
 
-A buildless, responsive website for GitHub Pages. All six pages are plain HTML and share `style.css`. No npm packages or server are needed in production.
+A buildless, responsive website for GitHub Pages. All seven pages are plain HTML and share `style.css`. No npm packages or server are needed in production.
 
 ## Editing
 
-Edit the shared content in `build_site.py` and the research-journey narrative in `research_journey.py`, then run `python build_site.py` to regenerate the six HTML pages. Styles are edited directly in `style.css`.
+Edit the shared content in `build_site.py` and the research-journey narrative in `research_journey.py`, then run `python build_site.py` to regenerate the seven HTML pages. Styles are edited directly in `style.css`.
 
 Preview with `python -m http.server 8000`, then open http://localhost:8000.
 
@@ -35,3 +35,5 @@ The site owner clarified the programme’s measurable overarching objective: max
 Following the supplied editorial brief, Research Journey is 666 words (excluding the shared page heading/navigation/footer), down from 1,192 words in the previous narrative, a 44.1% reduction. It preserves six stages with one scientific question each, current leadership evidence and the survival/quality-of-life objective. The chapter jump navigation and large illustrations were removed from this page. Appointments, education and community engagement are now on cv.html, with publication and teaching resource links. Source CV files remain private.
 
 The Dundee wording was checked against the original user recording in the SpinozaLecture chat: the lab work investigated language comprehension using eye tracking, including sentence/image mismatches and their effect on gaze. The later clinical explanation studies revisit eye tracking in a new domain; the early work is not described generically as research on interpreting information.
+
+The homepage is intentionally limited to four sections: portrait-led hero, one signature research diagram, three one-line project highlights, and a short collaboration invitation. Its main narrative is 96 words; full visible text including headings, navigation, diagram labels and footer is approximately 252 words, reduced from 1,241. Detailed programme text, flagship publications and the future agenda are on research.html. Primary navigation is Home / Research / Projects / About / CV; About links to the concise Research Journey, with Students and Teaching in the footer. Agenda links now target research.html#agenda.
