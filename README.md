@@ -16,7 +16,7 @@ The Students page lists current PhD students and historical student entries supp
 
 The timeline is ordered by start date, newest first; overlapping roles and education are retained. The supplied AIME 2027 reference could not be loaded during implementation, so its layout has not been reproduced.
 
-The portrait is an optimized WebP copy of the existing `profile.jpg`, which is retained in the GitHub repository. Fonts use Newsreader and DM Sans via Google Fonts with local system fallbacks. The editorial design emphasizes the research focus, selected publications, current projects and direct academic contact for collaboration and joint proposals. No funding or outcome guarantees are implied.
+The portrait is an optimized WebP copy of the user-supplied Warm Academic Portrait.png, saved as assets/portrait-warm.webp. The image is not retouched; the existing responsive layout provides its display crop. Fonts use Newsreader and DM Sans via Google Fonts with local system fallbacks. The editorial design emphasizes the research focus, selected publications, current projects and direct academic contact for collaboration and joint proposals. No funding or outcome guarantees are implied.
 
 The research introduction reflects the site owner's stated focus on explainability, reinforcement learning / sequential decision-making, uncertainty, and their effects on human decisions. The supplied WAI and Amsterdam presentation decks and the previous Google Sites biography were reviewed for context. The two WebP research illustrations are extracted from the WAI deck, slide 8 (active learning) and slide 14 (wearable/mobile interfaces). The decks themselves are not published. Homepage SVGs are conceptual illustrations, not experimental results.
 
